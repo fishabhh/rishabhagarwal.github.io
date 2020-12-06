@@ -1,0 +1,231 @@
+html {
+  scroll-behavior: smooth;
+}
+header {
+  position: relative;
+  z-index: 10;
+  height: 10vh;
+}
+#nav_container{
+  height: 10vh;
+}
+nav{
+  top:5vh;
+  margin-top: 5vh;
+}
+#container_1{
+  height: 90vh;
+}
+#i_am_Rishabh{
+  height: 20vh;
+}
+#image_container{
+  height:40vh;
+}
+#my_image{
+  height: 40vh;
+}
+#software_developer{
+  height: 10vh;
+}
+#mouse_container{
+  height: 20vh;
+}
+#about_me_heading{
+  height: 50vh;
+  padding-top:10vh ;
+}
+#skills_container{
+  height: 50vh;
+}
+.skills{
+  padding:4vh ;
+  height: 30vh;
+}
+#internships{
+  padding-top: 10vh;
+  height: 20vh;
+}
+#internship1_container{
+  height: 25vh;
+}
+#internship2_container{
+  height: 35vh;
+}
+#internship3_container{
+  height: 30vh;
+}
+#projects{
+  padding-top:10vh;
+  height: 20vh;
+}
+#project1_container{
+  height: 20vh;
+}
+#project2_container{
+  height: 20vh;
+}
+#project3_container{
+  height: 20vh;
+}
+#project4_container{
+  height: 20vh;
+}
+.moving-mouse-holder {
+  margin: auto;
+  margin-top: 5vh;
+  width: 26px;
+  align-self: center;
+}
+.moving-mouse-holder .mouse {
+  width: 26px;
+  height: 40px;
+  position: relative;
+  /* right: 10px; */
+  border-radius: 18px;
+  border: 2px solid whitesmoke;
+}
+.moving-mouse-holder .mouse-button {
+  background-color:whitesmoke;
+  width: 4px;
+  height: 10px;
+  border-radius: 2px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin: 0 0 0 -2px;
+  animation: mouse-scroll 1s infinite alternate;
+}
+@keyframes mouse-scroll {
+  to {
+    transform: translate(0, 6px) scale(1, 0.8);
+  }
+}
+/* ---- ParticleJS ---- */
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+    color:whitesmoke
+  }
+  canvas {
+    display: block;
+    /* vertical-align: bottom; */
+  } /* ---- particles.js container ---- */
+  #particles-js {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(56,56,56,1), rgba(16,16,16,2));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+  }
+/*I am Rishabh*/
+.ml12 {
+  letter-spacing: 0.5em;
+  padding-top: 5vh;
+}
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+/*Software Developer*/
+.ml3 {
+  letter-spacing: 0.3em;
+  padding-top: 5vh;
+}
+/*I Code*/
+.ml11 {
+  font-weight: 600;
+  font-size: 1.9em;
+  letter-spacing: 0.5em;
+  height:5vh;
+}
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: black;
+  transform-origin: 0 50%;
+}
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+/*I Design*/
+.ml13 {
+  font-size: 1.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-weight: 600;
+  height: 5vh;
+}
+.ml13 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+/*I Analyze*/
+.ml15 {
+  font-weight: 600;
+  font-size: 1.9em;
+  letter-spacing: 0.5em;
+  height:5vh;
+}
+.ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+}
+/*I Research*/
+.ml6 {
+  font-weight: 600;
+  font-size: 1.9em;
+  letter-spacing: 0.5em;
+  height: 5vh;
+}
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+@media screen and (max-width:768px){
+  #upper_animation{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  #lower_animation{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (max-width:420px){
+  #upper_animation{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  #lower_animation{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
